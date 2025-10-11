@@ -1,0 +1,39 @@
+.partners-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.partnerss{
+    margin-bottom: 30px;
+font-size: 40px;
+font-weight: 600;
+}
+
+/* Slick customization */
+.slick-slide {
+  margin: 0 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slick-slider {
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}

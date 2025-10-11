@@ -1,37 +1,41 @@
-
-
-
-// components/Carosal.jsx
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Carosal = () => {
-
   return (
     <section className="relative">
-      {/* Main Slider */}
       <div
         className="relative w-full h-[700px] bg-no-repeat bg-cover bg-center transition-all"
-        style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg")` }}
+        style={{
+          backgroundImage: `url("https://img.freepik.com/free-photo/people-taking-photos-food_23-2149303524.jpg?semt=ais_hybrid&w=740&q=80")`,
+        }}
       >
         <div className="bg-black/60 flex justify-center h-full items-center py-20 md:py-28 lg:py-32 xl:py-56 px-3 md:px-4 lg:px-8">
-          {/* Left Content */}
           <div className="flex flex-col justify-center gap-5 md:gap-8 text-white">
-            <div className="flex flex-col  justify-center text-center gap-4">
-              <h2 className="text-xl md:text-3xl lg:text-4xl font-semibold">Mukunda - Shotru - Trailer</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-              
+            <div className="flex flex-col justify-center text-center gap-4">
+              <h1 className="text-xl md:text-4xl lg:text-6xl font-semibold">
+                Delicious Food, Delivered Fast
+              </h1>
+              <p className="text-sm md:text-lg text-gray-200 max-w-2xl mx-auto">
+                Experience the taste of your favorite restaurants from the comfort of your home. 
+                Fresh, hot, and delivered straight to your door — because you deserve the best bite every time.
+              </p>
             </div>
-            <div className="flex flex-row items-center justify-center gap-3 md:gap-4">
-              <a href="single-video.html" className="btn btn-secondary bg-white text-black px-4 py-2 rounded">Watch Now <i className="pl-2 fa-solid fa-play"></i></a>
-              <button className="btn btn-primary bg-red-600 px-4 py-2 rounded">Add To List <i className="pl-2 fa-solid fa-plus"></i></button>
 
+            <div className="flex flex-row items-center justify-center gap-3 md:gap-4">
+              <a
+                href="#explore"
+                className="bg-white text-black font-medium px-5 py-2 rounded hover:bg-gray-200 transition-all"
+              >
+                Explore Menu <i className="pl-2 fa-solid fa-utensils"></i>
+              </a>
+              <Link to="/contact" className="bg-[#E01B6F] hover:[#E01B6F] text-white font-medium px-5 py-2 rounded transition-all">
+                Contact <i className="pl-2 fa-solid fa-cart-plus"></i>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-
-
     </section>
   );
 };
