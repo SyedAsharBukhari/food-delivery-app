@@ -13,6 +13,10 @@ import Products from './components/products/Products'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Product from './pages/Product'
+import NotFound from './pages/NotFound'
+import ViewCart from './pages/ViewCart'
+import CheckOut from './pages/CheckOut'
 
 function App() {
 
@@ -25,6 +29,11 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/contact" element={<Contact/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/checkout" element={<CheckOut/>}/>
+      <Route path="/view-cart" element={<ViewCart/>}/>
+      <Route path="/product/:id" element={<Product/>}/>
+      <Route path="*" element={<NotFound/>}/>
     </Routes>
          <Footer/>
     </BrowserRouter>
